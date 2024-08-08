@@ -22,6 +22,8 @@ function trocarImg(img){
     
     var element = document.getElementById("tempo_img")
     var element2 = document.getElementById("temp_img")
+
+
     if( img == "céu limpo"){
 
         tempo_img.src ="https://basmilius.github.io/weather-icons/production/fill/all/clear-day.svg"
@@ -40,6 +42,38 @@ function trocarImg(img){
             temp_img.src = "https://basmilius.github.io/weather-icons/production/fill/all/overcast.svg"
     }
 
+    else if(img == "chuva"){
+
+            tempo_img.src = "https://basmilius.github.io/weather-icons/production/fill/all/rain.svg"
+            temp_img.src = "https://basmilius.github.io/weather-icons/production/fill/all/rain.svg"
+    }
+
+    else if(img == "neve"){
+
+            tempo_img.src = "https://basmilius.github.io/weather-icons/production/fill/all/snow.svg"
+            temp_img.src = "https://basmilius.github.io/weather-icons/production/fill/all/snow.svg"
+    }
+
+    else if(img == "neblina"){
+
+            tempo_img.src = "https://basmilius.github.io/weather-icons/production/fill/all/mist.svg"
+            temp_img.src = "https://basmilius.github.io/weather-icons/production/fill/all/mist.svg"
+
+    }
+
+    else if(img == "tempestade"){
+
+            tempo_img.src = "https://basmilius.github.io/weather-icons/production/fill/all/thunderstorms.svg"
+            temp_img.src = "https://basmilius.github.io/weather-icons/production/fill/all/thunderstorms.svg"
+    }
+
+    else if(img == "chuva leve"){
+
+            tempo_img.src = "https://basmilius.github.io/weather-icons/production/fill/all/drizzle.svg"
+            temp_img.src = "https://basmilius.github.io/weather-icons/production/fill/all/drizzle.svg"
+
+    }
+
 }
 async function buscarCidade(cidade){
 
@@ -54,3 +88,26 @@ function clickbutton(){
 
     buscarCidade(cidade)
 }
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    function data() {
+        const dataAtual = new Date();
+
+        const diasSemana = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
+        const meses = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", 
+                       "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"];
+
+        const diaSemana = diasSemana[dataAtual.getDay()];
+        const dia = dataAtual.getDate();
+        const mes = meses[dataAtual.getMonth()];
+
+        const dataFormatada = `${diaSemana}, ${dia} de ${mes}`;
+
+        document.querySelector(".data").innerHTML = dataFormatada;
+    }
+
+    data();
+});
+

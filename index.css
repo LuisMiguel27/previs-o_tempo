@@ -49,6 +49,12 @@ header > button{
     height: 30px;
     border-radius: 50%;
     border: solid 2px var(--third-color);
+    transition: 0.5s;
+}
+
+button:hover{
+
+    border-color: var(--second-color);
 }
 
 button > img{
@@ -71,7 +77,7 @@ header > h1{
 
     display: flex;
     flex-direction:row;
-    width: 100%;
+    width: 90%;
     max-width: 1220px;
     justify-content: space-around;
     align-items: center;
@@ -148,7 +154,8 @@ header > h1{
     background-color: var(--primary-color);
     width: 100px;
     border-radius: 10px;
-    padding-left: 10px;
+    padding-left: 7px;
+    padding-bottom: 2px;
    
     
 }
@@ -189,4 +196,33 @@ header > h1{
 
 .info >p{
     padding-left: 10px;
+}
+
+
+    
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        gap: 20px;
+    }
+    .card_principal {
+
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+    .cidade > h1 {
+
+        font-size: 36px;
+    }
+
+    .informacoes_principais, .informacoes_adicionais, .cidade {
+        align-items: center;
+        text-align: center;
+    }
+
+    .informacoes_principais > p {
+        width: 110px;
+    }
 }

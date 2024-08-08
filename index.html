@@ -6,7 +6,7 @@
     <title>Previsão do Tempo</title>
     <link rel="stylesheet" href="index.css">
     <script src="JQuery/js/jquery.js"></script>
-    <script src="index.js"></script>
+   
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -26,17 +26,18 @@
             <div class="cidade">
 
                 <h1 class="cidade_tela">Cidade*</h1>
-                <p>Segunda, 21 de setembro</p>
+                <p class="data"></p>
+
                 <div class="informacoes_adicionais">
-                    <div class="info"><img src="https://basmilius.github.io/weather-icons/production/fill/all/wind.svg"><p class="vento">Ventos: 3km/h</p></div>
-                    <div class="info"><img id="tempo_img" src="https://basmilius.github.io/weather-icons/production/fill/all/rain.svg"><p class="tempo">Tempo: nublado</p></div>
-                    <div class="info"><img src="https://basmilius.github.io/weather-icons/production/fill/all/humidity.svg"><p class="umidade">Umidade: 70%</p></div>
+                    <div class="info"><img src="https://basmilius.github.io/weather-icons/production/fill/all/wind.svg"><p class="vento">Ventos: </p></div>
+                    <div class="info"><img id="tempo_img" src="https://basmilius.github.io/weather-icons/production/fill/all/rain.svg"><p class="tempo">Tempo: </p></div>
+                    <div class="info"><img src="https://basmilius.github.io/weather-icons/production/fill/all/humidity.svg"><p class="umidade">Umidade:</p></div>
                 </div>
             </div>
             
                 <div class="informacoes_principais">
                     <p>Atualmente</p>
-                    <!--img-->
+                
                     <div class="temperatura">
                         <img id="temp_img" width="200px" height="200px" src="https://basmilius.github.io/weather-icons/production/fill/all/clear-day.svg">
                         <h1 class="temp_atual">21°C</h1>
@@ -45,10 +46,13 @@
                     
                 </div>
             
+            
                
         </div>
 
 
     </section>
+
+    <script src="index.js"></script>
 </body>
 </html>
