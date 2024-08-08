@@ -1,0 +1,192 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+:root{
+
+    --primary-color: #006e9b;
+    --second-color:#1e41cb;
+    --third-color:#c3dbd8;
+}
+
+.container_principal{
+    width: 100%;
+    max-width: 1200px;
+
+}
+
+header{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header > input{
+
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: solid 2px var(--third-color);
+    padding-left: 5px;
+
+}
+
+header > button{
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: solid 2px var(--third-color);
+}
+
+button > img{
+    
+    width: 20px;
+    height: 20px;
+    padding-top: 2px;
+    cursor: pointer;
+    
+}
+
+header > h1{
+
+    color: var(--primary-color);
+    
+}
+
+
+.card_principal{
+
+    display: flex;
+    flex-direction:row;
+    width: 100%;
+    max-width: 1220px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--primary-color);
+    margin-left: 50px;
+    margin-right: 50px;
+    color: var(--third-color);
+    border-radius: 20px;
+}
+.cidade{
+
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+    justify-content: center;
+
+}
+
+.cidade > h1{
+
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+.cidade > h1, p{
+
+    width: 500px;
+}
+
+.cidade > p{
+
+    font-weight: bold;
+}
+
+.informacoes_adicionais{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:10px;
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background-color: var(--third-color);
+    color: var(--second-color);
+    border-radius: 10px;
+
+}
+
+.informacoes_principais{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: linear-gradient(140deg, rgba(195,219,216,1) 2%, rgba(30,65,203,1) 100%);    border-radius: 20px;
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    padding-left: 10px;
+    padding-top: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.informacoes_principais > p{
+
+    background-color: var(--primary-color);
+    width: 100px;
+    border-radius: 10px;
+    padding-left: 10px;
+   
+    
+}
+
+.temperatura{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.temperatura > p{
+
+    margin-bottom: 10px;
+}
+
+.info > img{
+
+    width: 50px;
+    height: 40px;
+    border-radius: 10px;
+    background: linear-gradient(140deg, rgba(195,219,216,1) 2%, rgba(30,65,203,1) 100%);
+
+}
+
+.info{
+
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    
+}
+
+.info >p{
+    padding-left: 10px;
+}
